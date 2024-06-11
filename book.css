@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #1eccb5;
+    color: lime;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+#title {
+    font-size: 2.5rem;
+}
+
+#headFrm {
+    display: flex;
+    align-items: center;
+}
+
+#ss {
+    margin-right: 20px;
+}
+
+#searchContact {
+    font-size: 1rem;
+    padding: 5px;
+    border: 2px solid #27ae60;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+
+main {
+    margin: 20px auto;
+    background-color: #ecf0f1;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+}
+
+.addContact {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #27ae60;
+    border-radius: 4px;
+}
+
+input[type="submit"], button {
+    background-color: #16a085;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid black;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #1eccb5;
+}
+
+tr:nth-child(odd) {
+    background-color: #a2ded0;
+}
+
+#popup, #confirm, #existsup {
+    box-sizing: border-box;
+    padding: 30px;
+    border: 2px solid grey;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 700px;
+    background: #FDF5F5;
+    color: #FB0875;
+    display: none;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#ok, #yesbtn, #nobtn, #eok {
+    width: 90px;
+    height: 40px;
+    background: #FB0875;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}

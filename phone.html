@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Phone Book</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 id="title">Phone Book</h1>
+            
+            <form id="headFrm">    
+                <div id="ss">                          
+                    <p class="pp">Search By :</p>
+                    <input type="radio" id="searchBy1" name="name1" checked>
+                    <label for="searchBy1"> Name </label>
+                    <input type="radio" id="searchBy2" name="name1">
+                    <label for="searchBy2"> Phone </label>
+                </div>
+                <input type="text" name="search" id="searchContact" placeholder="Search Here..." required>
+            </form>
+        </header>
+
+        <main>
+            <h2>Add Contact</h2>
+            <form id="frm" name="info">
+                <input type="text" name="contactName" class="addContact" id="name" placeholder="NAME" required>
+                <input type="tel" name="contactNo" class="addContact" id="phone" placeholder="PHONE" required>
+                <input type="submit" value="ADD" id="addCont" name="go">
+                <p style="color:red;font-style:italic;font-size:25px;display: none;">Missing Details...</p>
+            </form>
+            <table id='contacts'>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbdy">
+                    <tr id="contInfo"></tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <div id="popup">
+        <p>Your Phone No appears to be invalid</p>
+        <p>Make sure you are using this format "03175115059"</p>
+        <button type="button" id="ok">OK</button>
+    </div>
+    <div id="confirm">
+        <p>Are you sure you want to delete this contact?</p>
+        <button type="button" id="yesbtn">YES</button>
+        <button type="button" id="nobtn">NO</button>
+    </div>
+    <div id="existsup">
+        <p>The Phone Number you entered already exists</p>
+        <button type="button" id="eok">OK</button>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
