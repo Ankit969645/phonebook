@@ -1,0 +1,20 @@
+{
+  "name": "phone-book",
+  "version": "1.0.0",
+  "description": "A simple phone book application.",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [
+    "phonebook",
+    "contacts",
+    "javascript"
+  ],
+  "author": "Ankit969645",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
